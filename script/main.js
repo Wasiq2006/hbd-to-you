@@ -1,8 +1,8 @@
 // ---------------------- CONFIG ----------------------
 const config = {
-    name: "Mom", // Person's name
+    name: "Person name", // Person's name
     message: "Wishing you all the love and happiness today! You deserve the best. ❤️", // Custom message
-    theme: "theme-romantic", // Options: theme-romantic, theme-party, theme-elegant, theme-aesthetic
+    theme: "theme-elegant", // Options: theme-romantic, theme-party, theme-elegant, theme-aesthetic
     photos: [ // Add URLs of images or relative paths in img/ folder
         "img/photo1.jpg",
         "img/photo2.jpg",
