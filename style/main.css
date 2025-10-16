@@ -1,3 +1,4 @@
+/* ---------------------- GLOBAL ---------------------- */
 html {
   box-sizing: border-box;
 }
@@ -5,6 +6,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .song {
@@ -28,6 +30,7 @@ body {
   top: 20vh;
 }
 
+/* ---------------------- GREETING ---------------------- */
 .one {
   font-size: 4.5rem;
 }
@@ -41,6 +44,7 @@ body {
   font-size: 3rem;
 }
 
+/* ---------------------- CHATBOX ---------------------- */
 .four .text-box {
   border: 3px solid #aaa;
   border-radius: 5px;
@@ -69,6 +73,25 @@ body {
   right: 5px;
 }
 
+/* ---------------------- PHOTO GALLERY ---------------------- */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.birthday-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0.3rem;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+/* ---------------------- IDEAS & WISHES ---------------------- */
 .five p {
   font-size: 2rem;
   left: 0;
@@ -86,14 +109,15 @@ body {
   font-size: 4rem;
 }
 
-.idea-5 span, .idea-6 span, .wish-hbd span {
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -105,17 +129,16 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
 
+/* ---------------------- BALLOONS & EFFECTS ---------------------- */
 .baloons img {
   display: inline-block;
   position: absolute;
@@ -127,10 +150,6 @@ body {
 
 .baloons img:nth-child(odd) {
   right: -10%;
-}
-
-.baloons img:nth-child(3n + 0) {
-  left: 30%;
 }
 
 .seven, .eight {
@@ -147,60 +166,6 @@ body {
   visibility: hidden;
   width: 25px;
   z-index: -1;
-}
-
-.eight svg:nth-child(1) {
-  fill: #bd6ecf;
-  left: 5vw;
-  top: 7vh;
-}
-
-.eight svg:nth-child(2) {
-  fill: #7dd175;
-  left: 35vw;
-  top: 23vh;
-}
-
-.eight svg:nth-child(3) {
-  fill: #349d8b;
-  left: 23vw;
-  top: 33vh;
-}
-
-.eight svg:nth-child(4) {
-  fill: #347a9d;
-  left: 57vw;
-  top: 43vh;
-}
-
-.eight svg:nth-child(5) {
-  fill: #c66053;
-  left: 7vw;
-  top: 68vh;
-}
-
-.eight svg:nth-child(6) {
-  fill: #bfaa40;
-  left: 77vw;
-  top: 42vh;
-}
-
-.eight svg:nth-child(7) {
-  fill: #e3bae8;
-  left: 83vw;
-  top: 68vh;
-}
-
-.eight svg:nth-child(8) {
-  fill: #8762cb;
-  left: 37vw;
-  top: 86vh;
-}
-
-.eight svg:nth-child(9) {
-  fill: #9a90da;
-  left: 87vw;
-  top: 94vh;
 }
 
 .wish-hbd {
@@ -225,68 +190,57 @@ body {
   z-index: 3;
 }
 
-/* Media Queries */
+/* ---------------------- THEMES ---------------------- */
+
+/* Romantic theme */
+.theme-romantic {
+  background-color: #ffe6e6;
+  color: #d6336c;
+}
+
+/* Party theme */
+.theme-party {
+  background-color: #fff8e1;
+  color: #ff6f00;
+}
+
+/* Elegant theme */
+.theme-elegant {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Aesthetic theme */
+.theme-aesthetic {
+  background-color: #d0f0fd;
+  color: #1c3d5a;
+}
+
+/* ---------------------- MEDIA QUERIES ---------------------- */
 @media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
+  .six .hat { left: 40%; }
 }
 
 @media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
+  .six .hat { left: 37%; }
 }
 
 @media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
+  .six .hat { left: 32%; }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
+  .six .hat { left: 32%; }
 }
 
 @media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .text-box .fake-btn {
-    bottom: -38px;
-    right: 5px;
-  }
-
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .six .hat {
-    /* top: -20px; */
-    width: 50px;
-  }
-
-  .wish-hbd {
-    font-size: 2.2em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-  }
-
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
+  .container { width: 90%; }
+  .four .text-box { width: 90%; }
+  .text-box .fake-btn { bottom: -38px; right: 5px; }
+  .idea-5 span { display: block; }
+  .idea-6 span { font-size: 10rem; }
+  .six .hat { width: 50px; }
+  .wish-hbd { font-size: 2.2em; }
+  .wish h5 { font-size: 1.4rem; }
+  .nine p { font-size: 1.5rem; font-weight: lighter; }
 }
