@@ -8,7 +8,7 @@ const config = {
         "img/photo2.jpg",
         "img/photo3.jpg"
     ],
-    music: "./music/hbd.mpeg" // Path to background music
+    music: "./music/pasilyo.mp3" // Path to background music
 };
 
 // ---------------------- SETUP ----------------------
