@@ -1,6 +1,6 @@
 // ---------------------- CONFIG ----------------------
 const config = {
-  name: "Zahraa", // Person's name
+  name: "Abdu", // Person's name
   message:
     "Wishing you all the love and happiness today! You deserve the best. ❤️", // Custom message
   theme: "theme-romantic", // Options: theme-romantic, theme-party, theme-elegant, theme-aesthetic
@@ -10,7 +10,7 @@ const config = {
     "img/photo2.jpg",
     "img/photo3.jpg",
   ],
-  music: "./music/hbd.mpeg", // Path to background music
+  music: "./music/Immortal.mp3", // Path to background music
 };
 
 // ---------------------- SETUP ----------------------
