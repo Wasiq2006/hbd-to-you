@@ -10,7 +10,7 @@ const config = {
     "img/photo2.jpg",
     "img/photo3.jpg",
   ],
-  music: "./music/Immortal.mp3", // Path to background music
+  music: "./music/Im.mp3", // Path to background music
 };
 
 // ---------------------- SETUP ----------------------
